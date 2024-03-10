@@ -1,3 +1,6 @@
+-- [[ Custom Keymaps ]]
+vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
