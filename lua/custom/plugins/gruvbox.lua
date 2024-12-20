@@ -37,7 +37,10 @@ return {
     -- Set gruvbox-material specific options
     vim.g.gruvbox_material_background = 'hard'
     vim.g.gruvbox_material_better_performance = 1
-
+    vim.g.gruvbox_material_colors_override = {
+      bg0 = { '#00000000', '234' }, -- black background
+      bg2 = { '#282828', '235' }, -- cursor line
+    }
     -- Apply the colorscheme
     vim.cmd.colorscheme 'gruvbox-material'
   end,
