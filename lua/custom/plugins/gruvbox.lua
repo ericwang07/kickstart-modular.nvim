@@ -1,19 +1,17 @@
+-- Everforest
 -- return {
---   'rebelot/kanagawa.nvim',
---   priority = 1000,
+--   'sainnhe/everforest',
 --   lazy = false,
---   opts = {
---     transparent = true,
---     styles = {
---       sidebars = 'transparent',
---       floats = 'transparent',
---     },
---   },
+--   priority = 1000,
 --   config = function()
---     vim.cmd.colorscheme 'kanagawa-dragon'
+--     vim.g.everforest_background = 'hard'
+--     vim.g.everforest_better_performance = 1
+--     vim.g.everforest_transparent_background = 2
+--     vim.cmd.colorscheme 'everforest'
 --   end,
 -- }
---
+
+-- Gruvbox
 return {
   'sainnhe/gruvbox-material',
   priority = 1000,

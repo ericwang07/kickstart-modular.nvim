@@ -4,6 +4,12 @@ return {
   dependencies = { 'nvim-lua/plenary.nvim' },
   config = function()
     require('harpoon'):setup()
+
+    local current_win = vim.api.nvim_get_current_win()
+
+    -- Define a bold highlight group for FloatTitle
+    vim.api.nvim_set_hl(0, 'BoldTitle', { bold = true })
+    vim.wo[current_win].winhighlight = 'NormalFloat:Normal,FloatBorder:NormalBorder,FloatTitle:BoldTitle'
   end,
   keys = {
     {
