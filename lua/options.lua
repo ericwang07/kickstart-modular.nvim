@@ -32,6 +32,17 @@ vim.opt.shiftwidth = 4
 -- When pressing Tab, insert 2 spaces
 vim.opt.softtabstop = 4
 
+-- Set C file indentation
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = 'c',
+  callback = function()
+    vim.opt_local.shiftwidth = 4
+    vim.opt_local.tabstop = 4
+    vim.opt_local.softtabstop = 4
+    vim.opt_local.expandtab = true
+  end,
+})
+
 -- Save undo history and turn off swap
 vim.opt.undofile = true
 vim.opt.swapfile = false
